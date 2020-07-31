@@ -16,7 +16,7 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         src: 'src/**/*.js',
-        dest: 'build/pen-<%= pkg.version %>.min.js'
+        dest: '../../build/pen-<%= pkg.version %>.min.js'
       }
     },
 
