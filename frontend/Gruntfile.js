@@ -32,7 +32,7 @@ module.exports = function(grunt) {
           {expand: true, flatten:true, src: ['lib/pen-master/src/font/*'], dest: 'build/font/', filter: 'isFile'},
           {expand: true, flatten:true, src: ['lib/pen-master/src/*.css'], dest: 'build/', filter: 'isFile'},
           {expand: true, flatten:true, src: ['src/*.css'], dest: 'build/', filter: 'isFile'},
-          {expand: false, src: ['index.html', '404.html'], dest: 'build/', filter: 'isFile'},
+          {expand: false, src: ['index.html', '404.html', 'privacy.html'], dest: 'build/', filter: 'isFile'},
         ]
       }
     },
