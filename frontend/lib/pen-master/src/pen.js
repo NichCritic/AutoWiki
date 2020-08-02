@@ -1,4 +1,5 @@
 /*! Licensed under MIT, https://github.com/sofish/pen */
+/*jslint latedef:false*/
 (function(root, doc) {
 
   var Pen, debugMode, selection, utils = {};
