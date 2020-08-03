@@ -14,9 +14,12 @@ module.exports = function(grunt) {
     },
 
     uglify: {
+      options: {
+        hoist_funs:true
+      },
       build: {
         files: {
-          'build/autowiki-<%= pkg.version %>.min.js': ['lib/pen-master/src/**/*.js', 'src/*.js']
+          'build/autowiki-<%= pkg.version %>.min.js': ['lib/pen-master/src/**/*.js', 'src/scripts/*.js', 'src/autowiki.js']
         }
       }
     },
