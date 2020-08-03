@@ -15,6 +15,19 @@ var pen = window.pen = new Pen(options);
 
 pen.focus();
 
+
+
+var timer = new ResettableTimer({
+  time: 10000
+  cb: function(timer) {
+    alert("Save");
+  }
+})
+
+document.querySelector('.pen').addEventListener('input', function() {
+  timer.reset();
+})
+
 // toggle editor mode
 document.querySelector('#mode').addEventListener('click', function () {
   if (this.classList.contains('disabled')) {

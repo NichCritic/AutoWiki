@@ -3,7 +3,8 @@
     "console": false,
     "Pen": true,
     "$" : true, 
-    "gapi": true
+    "gapi": true,
+    "ResettableTimer"
   },
   "bitwise": true,
   "camelcase": false,
