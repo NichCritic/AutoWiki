@@ -84,6 +84,18 @@ pre {
   top: 0;
 }
 
+#title {
+  width:90%;
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+[contenteditable][placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #999;
+}
+
 /*
 When the webpage is printed
 this media query hides extra elements,

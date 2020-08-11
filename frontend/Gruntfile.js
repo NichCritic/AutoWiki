@@ -46,6 +46,7 @@ module.exports = function(grunt) {
         bucket: 'autowiki.naelick.com',
         gzip: false,
         headers: {
+          cacheControl: 'no-cache'
         },
         metadata: {
         }

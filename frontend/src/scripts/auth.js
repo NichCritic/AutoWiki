@@ -39,7 +39,7 @@ function initClient() {
     $('#revoke-access-button').click(function() {
       revokeAccess();
     });
-  });
+  }).then(main);
 }
 
 function handleAuthClick() {

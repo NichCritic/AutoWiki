@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Autowiki Hi Jade</title>
+  <title>Autowiki</title>
   <link rel="stylesheet" href="autowiki.css" />
   <link rel="stylesheet" href="pen.css" />
 </head>
@@ -24,8 +24,12 @@
     
   </div>
 
-  <div data-toggle="pen" data-placeholder="Just start typing...">
+  <div id="title" contenteditable placeholder="Give your book a title..."></div>
+
+  <div data-toggle="pen" data-placeholder="... then just start typing ...">
   </div>
+
+  <div id="filelist" hidden></div>
 
   <script src="autowiki-0.0.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

@@ -1,5 +1,5 @@
 /*jslint unused:false*/
-var ResettableTimer = function(){
+var ResettableTimer = (function(){
 
 	var RTimer = function(options) {
 		this.timeout = null;
@@ -17,9 +17,9 @@ var ResettableTimer = function(){
 
 	PROTO.reset = function() {
 		if(this.timeout && this.cb) {
-			window.clearTimout(this.timeout);
-			this.start();
+			window.clearTimeout(this.timeout);
 		}
+		this.start();
 	};
 
 	PROTO.start = function() {
@@ -32,5 +32,5 @@ var ResettableTimer = function(){
 		this.cb = cb;
 	};
 
-	return new RTimer();
-};
+	return RTimer;
+})();
